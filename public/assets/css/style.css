@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* button */
+.btn-danger {
+    background-color: rgb(133, 36, 224);
+    border-radius: 10px;
+    border-color: rgb(133, 36, 224);
+    padding: 10px 45px;
+    color: white;
+}
+
+.btn-baca {
+    background-color: darkviolet;
+    border-color: darkviolet;
+}
+
+.btn-baca:hover {
+    background-color: purple;
+    border-color: purple;
+}
+
+/* navbar */
+.nav-item .nav-link {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}

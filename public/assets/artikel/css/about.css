@@ -1,0 +1,217 @@
+.header h2 {
+    color: #ffff;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header p {
+    width: 80%;
+    color: #ffff;
+    font-size: 1.3rem;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.6;
+    position: relative;
+}
+
+.sejarah {
+    flex: flex;
+    align-items: center;
+    margin: 150px auto;
+    width: 70%;
+}
+
+
+.sejarah img {
+    max-width: 320px;
+    margin-right: 2rem;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    float: left;
+    display: block;
+    align-items: center;
+}
+
+.sejarah .sejarahsingkat {
+    padding-top: 10%;
+    flex: 1 1 70rem;
+    align-items: center;
+    text-justify: center;
+    min-height: 500px;
+}
+
+
+.sejarahsingkat h4 {
+    font-size: 1.5rem;
+}
+
+.sejarahsingkat p {
+    font-size: 1rem;
+    width: 100%;
+    text-align: justify;
+}
+
+/* visimisi Unggulan */
+#visimisi {
+    padding: 3vw 8vw 3vw 8vw;
+    text-align: center;
+    background-color: #d9d9dc;
+}
+
+#visimisi .pro-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+#visimisi .pro-box {
+    background: #f9f9ff;
+    text-align: start;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    /* Tambahkan border */
+    border-radius: 5px;
+    /* Tambahkan border-radius jika diperlukan */
+}
+
+#visimisi .pro-box i {
+    font-size: 2.3rem;
+    color: rgb(0, 0, 0);
+}
+
+#visimisi .pro-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding: 13px 0 7px 0;
+}
+
+#visimisi .pro-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 0.51);
+}
+
+/* Program Yang dijalankan */
+.programjalan {
+    padding: 3vw 0vw 6vw 0vw;
+    text-align: center;
+    /* 16:9 aspect ratio */
+    background-color: #ffffff;
+}
+
+.fotoprog {
+    width: 100%;
+    /* Atur ke 100% untuk membuatnya responsif */
+    max-width: 700px;
+    /* Maksimal lebar tetap 700px */
+    aspect-ratio: 16 / 9;
+    /* Ensures the image has a 16:9 aspect ratio */
+    object-fit: cover;
+
+}
+
+.carousel-inner {
+    position: relative;
+    left: 50%;
+    top: 5vh;
+    width: 100%;
+    /* Atur ke 100% untuk membuatnya responsif */
+    transform: translateX(-50%);
+    max-width: 700px;
+}
+
+.carousel-control-next-icon {
+    position: relative;
+    right: 21vw;
+    top: 10vh;
+}
+
+.carousel-control-prev-icon {
+    position: relative;
+    left: 21vw;
+    top: 10vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Background semi-transparan */
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    /* Atur lebar untuk memastikan teks tidak terlalu lebar */
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    margin: 0;
+    color: #fff;
+}
+
+/* MAP */
+.map {
+    padding: 3vw 8vw 3vw 8vw;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.map iframe {
+    width: 100%;
+    /* Atur ke 100% untuk membuatnya responsif */
+    max-width: 700px;
+    /* Maksimal lebar tetap 700px */
+    height: auto;
+    /* Mengatur tinggi otomatis */
+    border: 1px solid #ff1111;
+    /* Tambahkan border */
+    border-radius: 5px;
+    /* Tambahkan border-radius jika diperlukan */
+}
+
+/* Media Queries untuk HP */
+@media (max-width: 768px) {
+    .fotoprog {
+        width: 100%;
+        max-width: 100%;
+        /* Tidak ada batasan lebar maksimal pada layar kecil */
+    }
+
+    .carousel-inner {
+        top: 2vh;
+        /* Kurangi jarak dari atas untuk layar kecil */
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        top: 40%;
+        transform: translateY(-40%);
+        right: 5vw;
+        /* Sesuaikan untuk layar kecil */
+        left: 5vw;
+        /* Sesuaikan untuk layar kecil */
+    }
+
+    .carousel-caption {
+        width: 90%;
+        /* Lebar lebih besar untuk layar kecil */
+        font-size: 14px;
+        /* Ukuran font lebih kecil untuk layar kecil */
+    }
+
+    .map {
+        padding: 3vw 4vw 3vw 4vw;
+        /* Kurangi padding untuk layar kecil */
+    }
+
+    .map iframe {
+        max-width: 100%;
+        /* Tidak ada batasan lebar maksimal pada layar kecil */
+    }
+}

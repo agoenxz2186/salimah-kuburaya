@@ -1,0 +1,191 @@
+#hero h2 {
+    color: #ffff;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#hero p {
+    width: 80%;
+    color: #ffff;
+    font-size: 1.3rem;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* program Unggulan */
+#program {
+    padding: 3vw 8vw 3vw 8vw;
+    text-align: center;
+    background-color: #d9d9dc;
+    width: 100%;
+}
+
+#program .pro-base {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Membuat 3 kolom dengan lebar yang sama */
+    grid-gap: 1rem;
+    /* Jarak antara elemen */
+    justify-content: center;
+    /* Menyelaraskan grid di tengah */
+}
+
+#program .pro-box {
+    background: #f9f9ff;
+    width: 400px;
+    /* Lebar penuh kolom grid */
+    height: 300px;
+    /* Tinggi spesifik */
+    text-align: start;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    /* Tambahkan border */
+    border-radius: 5px;
+    /* Tambahkan border-radius jika diperlukan */
+}
+
+#program .pro-box i {
+    font-size: 2.3rem;
+    color: rgb(0, 0, 0);
+}
+
+#program .pro-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding: 13px 0 7px 0;
+}
+
+#program .pro-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 0.51);
+}
+
+.hero-title {
+    padding-top: 125px;
+    padding-right: 25px;
+    padding-left: 500px;
+    text-align: right;
+}
+
+.hero-title p {
+    text-align: center;
+}
+
+
+.hero-text {
+    font-size: 65px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+
+.hero-foto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    /* Lebar gambar */
+    margin-left: 50px;
+    /* Jarak gambar dengan tepi kiri */
+    opacity: 80%;
+}
+
+.hero-foto img {
+    width: 200%;
+    /* Pastikan gambar ketua mengisi seluruh lebar div */
+}
+
+.ketua-info {
+    position: absolute;
+    /* Setel posisi absolut */
+    bottom: 0;
+    left: 90px;
+    margin-left: 180px;
+    /* Jarak antara gambar dengan teks */
+}
+
+.ketua-info p {
+    font-size: 24px;
+    /* Ukuran teks */
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sambutan {
+    flex: flex;
+    align-items: center;
+    margin: 150px auto;
+    width: 70%;
+}
+
+
+.sambutan img {
+    max-width: 320px;
+    margin-right: 2rem;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    float: left;
+    display: block;
+    align-items: center;
+}
+
+.sambutan .katasambut {
+    padding-top: 10%;
+    flex: 1 1 70rem;
+    align-items: center;
+    text-justify: center;
+    min-height: 500px;
+}
+
+
+.katasambut h4 {
+    font-size: 1.5rem;
+}
+
+.katasambut p {
+    font-size: 1rem;
+    width: 100%;
+    text-align: justify;
+}
+
+@media (max-width: 1200px) {
+    #program .pro-base {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 kolom untuk layar lebih kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    #program .pro-base {
+        grid-template-columns: 1fr;
+        /* 1 kolom untuk layar kecil */
+    }
+
+    #program .pro-box {
+        height: auto;
+        /* Mengatur tinggi otomatis */
+    }
+
+    #hero h2 {
+        color: #ffff;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    #hero p {
+        width: 80%;
+        color: #ffff;
+        font-size: 1rem;
+        line-height: 1.4;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+    }
+}

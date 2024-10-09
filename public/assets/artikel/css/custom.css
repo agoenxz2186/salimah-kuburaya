@@ -1,0 +1,151 @@
+.navbar img {
+    width: 50%;
+    /* Mengatur lebar gambar agar mengisi lebar container */
+    height: auto;
+    /* Memastikan gambar tetap proporsional */
+    max-width: 150px;
+    /* Batas maksimum lebar gambar */
+    display: block;
+    /* Mengubah gambar menjadi elemen blok */
+    margin-left: auto;
+    /* Posisi margin kiri diatur otomatis */
+    margin-right: auto;
+    /* Posisi margin kanan diatur otomatis */
+}
+
+.featured-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: calc(0.24rem - 1px);
+}
+
+.single-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: calc(0.24rem - 1px);
+}
+
+.post-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: calc(0.24rem - 1px);
+}
+
+.card-height {
+    height: 350px;
+    position: relative;
+}
+
+.video-height {
+    height: 200px;
+    position: relative;
+}
+
+.custom-badge {
+    font-size: 14px;
+    /* Atur ukuran font sesuai kebutuhan */
+    /* padding: 20px 100px; */
+    /* Sesuaikan padding sesuai kebutuhan */
+}
+
+.laporan {
+    width: 150px;
+    position: relative;
+}
+
+.btn-baca {
+    background-color: darkviolet;
+    border-color: darkviolet;
+}
+
+.btn-baca:hover {
+    background-color: purple;
+    border-color: purple;
+}
+
+/* Footer baru */
+
+.footer {
+    text-align: center;
+}
+
+.footer img {
+    width: 100%;
+    /* Mengatur lebar gambar agar mengisi lebar container */
+    height: auto;
+    /* Memastikan gambar tetap proporsional */
+    max-width: 250px;
+    /* Batas maksimum lebar gambar */
+    display: block;
+    /* Mengubah gambar menjadi elemen blok */
+    margin-left: auto;
+    /* Posisi margin kiri diatur otomatis */
+    margin-right: auto;
+    /* Posisi margin kanan diatur otomatis */
+}
+
+.footer a {
+    color: #fff;
+    /* White link color */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+.footer a:hover {
+    color: #d4d4d4;
+    /* Lighten color on hover */
+    text-decoration: underline;
+    /* Underline on hover if desired */
+}
+
+.footer .menu,
+.footer .mediasocial {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .menu li,
+.footer .mediasocial li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer .mediasocial i {
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+.footer h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    border-bottom: 2px solid #fff;
+    /* Mengatur garis bawah */
+    padding-bottom: 10px;
+    /* Menambahkan padding agar teks tidak terlalu dekat dengan garis */
+}
+
+.footer p {
+    margin-top: 20px;
+    color: #fff;
+    max-width: 600px;
+    /* Atur sesuai kebutuhan */
+    margin-left: auto;
+    /* Posisi margin kiri diatur otomatis */
+    margin-right: auto;
+    /* Posisi margin kanan diatur otomatis */
+    /* White text color */
+}
+
+.custom-link {
+    color: black;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: black;
+    text-decoration: none;
+}
