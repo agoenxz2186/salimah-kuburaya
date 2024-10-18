@@ -1,0 +1,35 @@
+
+name: Menjalankan APP 
+
+on:
+  push:
+    branches:
+      - main  # Ganti dengan nama branch yang sesuai
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Matikan service container
+        run: |
+          set +e
+          docker compose -f docker-compose.yaml down
+          set -e
+
+      - name: Hapus image
+        run: |
+          set +e
+          docker image rm siproject/salimah
+          set -e
+
+      - name: Buat image api siproject/salimah
+        run: |
+          docker build -t siproject/salimah .
+
+      - name: Jalankan service app
+        run: |
+          docker compose up -d

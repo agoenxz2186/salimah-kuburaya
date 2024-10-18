@@ -1,0 +1,24 @@
+version: '3.5'
+
+networks:
+  serverbsi:
+    name: projects1_projectsinet
+    external: true
+
+
+services:
+
+  app_salimah:
+    container_name: app_salimah
+    restart: always
+    image: siproject/salimah
+    environment:
+      TZ: Asia/Jakarta
+      APP_DEBUG: "true"
+    
+    volumes:
+      - /home/bsi/projects1/storage/salimahkuburaya/storage:/var/www/storage/app
+    networks:
+      serverbsi:
+        ipv4_address: 192.168.195.16
+ 
