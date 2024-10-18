@@ -4,7 +4,7 @@ name: Menjalankan APP
 on:
   push:
     branches:
-      - main  # Ganti dengan nama branch yang sesuai
+      - development  # Ganti dengan nama branch yang sesuai
 
 jobs:
   build:
