@@ -10,7 +10,7 @@ COPY ./run.sh /docker/run.sh
 RUN chmod +x /docker/run.sh
 RUN rm -rf docker-compose.yaml Dockerfile supervisord.conf run.sh
 #RUN chmod +x /var/www/composer.phar
-RUN rm composer.lock
+RUN rm -rf composer.lock
 RUN composer install
 EXPOSE 80
 ENTRYPOINT ["sh", "/docker/run.sh"]
