@@ -10,4 +10,5 @@ class Kategori extends Model
     use HasFactory;
 
     protected $fillable = ['nama', 'slug'];
+    
 }
