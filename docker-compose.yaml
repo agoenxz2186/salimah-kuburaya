@@ -20,5 +20,5 @@ services:
       - /home/bsi/projects1/storage/salimahkuburaya/storage:/var/www/storage/app
     networks:
       serverbsi:
-        ipv4_address: 192.168.195.16
+        ipv4_address: 192.168.195.17
  
