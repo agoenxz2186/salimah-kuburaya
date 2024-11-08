@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\back;
+namespace App\Http\Controllers\Back;
 
 use App\Models\Cabang;
 use Illuminate\Support\Str;
