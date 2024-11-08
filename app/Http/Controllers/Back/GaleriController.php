@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Back;
 
 use App\Http\Controllers\Controller;
-use App\Models\galeri;
+use App\Models\Galeri;
 use App\Models\Laporan;
 use Illuminate\Http\Request;
 
@@ -23,7 +23,7 @@ class GaleriController extends Controller
             // Jika admin cabang, filter laporan berdasarkan cabang_id
             $laporans = Laporan::where('cabang_id', $user->cabang_id)->latest()->get();
         }
-        $galeris = galeri::orderBy('id', 'desc')->get(); // Ambil semua data galeri
+        $galeris = Galeri::orderBy('id', 'desc')->get(); // Ambil semua data galeri
 
         return view('back.galeri.index', [
             'galeris' => $galeris,
@@ -48,7 +48,7 @@ class GaleriController extends Controller
 
         $data = $request->validate($rules, $messages);
 
-        galeri::create($data);
+        Galeri::create($data);
 
         return redirect()->back()->with('success', 'Video berhasil ditambahkan');
     }
@@ -79,7 +79,7 @@ class GaleriController extends Controller
         $data = $request->validate($rules, $messages);
 
         // Update data galeri
-        $galeri = galeri::findOrFail($id);
+        $galeri = Galeri::findOrFail($id);
         $galeri->update($data);
 
         return redirect()->back()->with('success', 'Video berhasil diperbarui');
@@ -90,7 +90,7 @@ class GaleriController extends Controller
      */
     public function destroy(string $id)
     {
-        galeri::find($id)->delete();
+        Galeri::find($id)->delete();
         return back()->with('success', 'Video Berhasil Dihapus');
     }
 }

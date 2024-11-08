@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Back;
 
-use App\Models\kategori;
+use App\Models\Kategori;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -15,7 +15,7 @@ class KategoriController extends Controller
     public function index()
     {
         return view('back.kategori.index', [
-            'kategoris' => kategori::latest()->get()
+            'kategoris' => Kategori::latest()->get()
         ]);
     }
 

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\front;
 
-use App\Models\artikel;
-use App\Models\kategori;
+use App\Models\Artikel;
+use App\Models\Kategori;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -29,7 +29,7 @@ class ArtikelController extends Controller
     public function create()
     {
         return view('back.artikel.create', [
-            'kategoris' => kategori::get()
+            'kategoris' => Kategori::get()
         ]);
     }
 
@@ -58,7 +58,7 @@ class ArtikelController extends Controller
     public function show(string $id)
     {
         return view('back.artikel.show', [
-            'artikel' => artikel::find($id)
+            'artikel' => Artikel::find($id)
         ]);
     }
 
@@ -68,8 +68,8 @@ class ArtikelController extends Controller
     public function edit(string $id)
     {
         return view('back.artikel.update', [
-            'artikel'   => artikel::find($id),
-            'kategoris' => kategori::get()
+            'artikel'   => Artikel::find($id),
+            'kategoris' => Kategori::get()
         ]);
     }
 
@@ -106,7 +106,7 @@ class ArtikelController extends Controller
     public function destroy(string $id)
     {
 
-        $data = artikel::find($id);
+        $data = Artikel::find($id);
         Storage::delete('public/back/' . $data->img);
         $data->delete();
 
