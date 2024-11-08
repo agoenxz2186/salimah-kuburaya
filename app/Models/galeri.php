@@ -9,4 +9,5 @@ class galeri extends Model
 {
     use HasFactory;
     protected $fillable = ['judul', 'youtube_code'];
+    
 }
