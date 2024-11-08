@@ -10,7 +10,7 @@
         "intervention/image-laravel": "^1.2",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
-        "swooletw/laravel-swoole": "^2.13",
+        "asako21/swoole-laravel": "^1.0.0",
         "unisharp/laravel-filemanager": "^2.9",
         "yajra/laravel-datatables-oracle": "^11.1"
     },
